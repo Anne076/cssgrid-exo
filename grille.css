@@ -5,14 +5,20 @@ https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Les_concepts_de_ba
 /* mise en place de la grille */
 #basedelagrille{
     display: grid;
+    
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+      }
+
     /* configuration de la grille en 3 colonnes */
-    ??
-}
+
 
 /* positionnement du titre pour occuper toute une ligne */
 
 #titre{
-    grid-row: ?? ;
+    grid-column-start:1;
+     grid-column-end: 4;
 }
 
 /* positionnement des tuiles en 3x3 */
